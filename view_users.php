@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form method="get" action="view_users.php" class="form">
+    <form method="post" action="view_users.php" class="form">
         <h2> Danh sách thành viên</h2> 
         <table border="1">
         <tr>

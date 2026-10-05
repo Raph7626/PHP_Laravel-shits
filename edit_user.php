@@ -33,7 +33,8 @@
             }
             $sql = "UPDATE `member` SET username='$username', email ='$email', phone='$phone' WHERE id = '$id' ";
             if ($conn->query($sql) == TRUE) {
-                echo "Record updated succesfully";
+                header("Location: view_users.php");
+                exit();
             }else{
                 echo "Error updating record: " . $conn->error; 
             }
